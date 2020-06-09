@@ -11,8 +11,11 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
+    Button playAgainButton;
+    TextView winnerTextView;
 
     // 0: yellow, 1: red, 2: empty
+
 
     int[] gameState = {2, 2, 2, 2, 2, 2, 2, 2, 2};
 
@@ -74,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
-                    Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+                     playAgainButton = (Button) findViewById(R.id.playAgainButton);
 
-                    TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
+                    winnerTextView = (TextView) findViewById(R.id.winnerTextView);
 
                     winnerTextView.setText(winner + " has won!");
 
@@ -93,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
     public void playAgain(View view)
     {
 
-        Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
+       // Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
 
-        TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
+      //  TextView winnerTextView = (TextView) findViewById(R.id.winnerTextView);
 
         playAgainButton.setVisibility(View.INVISIBLE);
 
